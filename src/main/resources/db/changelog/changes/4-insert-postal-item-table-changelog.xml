@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="12-10-07-11-2020" author="danil">
+        <insert tableName="postal_item">
+            <column name="type" value="parcel"/>
+            <column name="status" value="isRegistered"/>
+            <column name="name_receiver" value="Антон Городецкий"/>
+            <column name="target_post_office_index" value="777888"/>
+        </insert>
+        <insert tableName="postal_item">
+            <column name="type" value="packet"/>
+            <column name="status" value="isRegistered"/>
+            <column name="name_receiver" value="Гессер"/>
+            <column name="target_post_office_index" value="111222"/>
+        </insert>
+        <insert tableName="postal_item">
+            <column name="type" value="postcard"/>
+            <column name="status" value="isRegistered"/>
+            <column name="name_receiver" value="Григорий"/>
+            <column name="target_post_office_index" value="111222"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
